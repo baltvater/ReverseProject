@@ -16,13 +16,5 @@ namespace ReverseProject
 
             return output;
         }
-
-        internal static void WriteItOut<T>(T[] input)
-        {
-            foreach (var i in input)
-            {
-                Console.WriteLine(i);
-            }
-        }
     }
 }

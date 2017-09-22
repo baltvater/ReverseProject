@@ -7,5 +7,7 @@
         T[] ReversedItems { get; }
 
         void Reverse(T[] input);
+
+        void WriteItOut(T[] input);
     }
 }

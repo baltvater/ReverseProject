@@ -8,15 +8,19 @@ namespace ReverseProject
         {
             IItems<int> intArray = new IntItems();
             intArray.Reverse(intArray.Items);
-            Helpers.WriteItOut(intArray.ReversedItems);
+            intArray.WriteItOut(intArray.ReversedItems);
 
             IItems<string> strArray = new StringItems();
             strArray.Reverse(strArray.Items);
-            Helpers.WriteItOut(strArray.ReversedItems);
+            strArray.WriteItOut(strArray.ReversedItems);
 
             IItems<DateTime> dateArray = new DateItems();
             dateArray.Reverse(dateArray.Items);
-            Helpers.WriteItOut(dateArray.ReversedItems);
+            dateArray.WriteItOut(dateArray.ReversedItems);
+
+            IItems<Cat> catArray = new CatItems();
+            catArray.Reverse(catArray.Items);
+            catArray.WriteItOut(catArray.ReversedItems);
 
             Console.Read();
         }

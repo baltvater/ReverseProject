@@ -19,5 +19,13 @@ namespace ReverseProject
         {
             ReversedItems = Helpers.Reverse(input);
         }
+
+        public void WriteItOut(DateTime[] input)
+        {
+            foreach (var i in input)
+            {
+                Console.WriteLine(i);
+            }
+        }
     }
 }

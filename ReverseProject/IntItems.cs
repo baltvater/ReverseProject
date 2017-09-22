@@ -1,4 +1,6 @@
-﻿namespace ReverseProject
+﻿using System;
+
+namespace ReverseProject
 {
     class IntItems : IItems<int>
     {
@@ -9,6 +11,14 @@
         public void Reverse(int[] input)
         {
             ReversedItems = Helpers.Reverse(input);
+        }
+
+        public void WriteItOut(int[] input)
+        {
+            foreach (var i in input)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
